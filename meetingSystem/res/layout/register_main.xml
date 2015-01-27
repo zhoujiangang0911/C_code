@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24" >
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:onClick="clickBackToFormer"
+            android:background="@drawable/back_reg"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_account"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phone_reg"
+            android:hint="@string/register_account"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:textColorHint="@color/text_color_gray" />
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_4"
+            android:background="@color/bg_black" />
+
+        <TextView
+            android:id="@+id/tv_register_verifys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/charge_pwd_verify"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/textsize_16" 
+            android:clickable="true"
+            android:onClick="clickVerifys"
+            />
+    </LinearLayout>
+   <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_32" 
+            android:background="@drawable/ibtn_login_checklayoutbg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center">
+             <TextView
+            android:id="@+id/et_voip_register_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="@string/login_voip_register_notice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" 
+            />
+
+             <TextView
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_4"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/et_voip_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="@string/login_voip_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" 
+            android:clickable="true"
+            android:onClick="clickVoipRegister"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+          android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_verify_code"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"           
+            android:background="@android:color/transparent"
+            android:hint="@string/register_verify_code"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:textColorHint="@color/text_color_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_identify_number"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"
+            android:drawableLeft="@drawable/id_reg"
+            android:background="@android:color/transparent"
+            android:hint="@string/register_identify_number"
+            android:maxLength="18"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:textColorHint="@color/text_color_gray" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_org_number"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"
+            android:drawableLeft="@drawable/org_reg"
+            android:background="@android:color/transparent"
+            android:hint="@string/register_org_number"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:editable="false"
+            android:textColorHint="@color/text_color_gray" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_new_pwd"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent" 
+            android:drawableLeft="@drawable/psd_reg"
+            android:hint="@string/register_new_pwd"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:textColorHint="@color/text_color_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+          android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_new_pwd_again"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/editText_height"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/psd_reg"
+            android:hint="@string/register_new_pwd_again"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/margin_4"
+            android:singleLine="true"
+            android:textColor="@color/bg_black"
+            android:textColorHint="@color/text_color_gray" />
+    </LinearLayout>
+    
+
+    <ImageButton
+        android:id="@+id/ibtn_register_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_16"
+        android:background="@drawable/ibtn_register_confirm"
+        android:contentDescription="@null" 
+        android:onClick="clickSubmit"/>
+
+</LinearLayout>

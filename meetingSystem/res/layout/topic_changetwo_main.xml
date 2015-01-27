@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/backhome"
+            android:onClick="clickBackToFormer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/topic_change"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/conf_two_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:paddingLeft="25dp"
+                    android:text="@string/topic_time_begin_end"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:drawableLeft="@drawable/conf_tv_btime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_starttime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:drawableLeft="@drawable/conf_tv_etime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_endtime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vote_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/conf_two_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:paddingLeft="25dp"
+                    android:text="@string/topic_vote_time_begin_end"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/vote_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:drawableLeft="@drawable/conf_tv_btime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_starttime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/vote_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:drawableLeft="@drawable/conf_tv_etime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_endtime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/suggsted_attender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_conm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_attender"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_org"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_joinm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_targetdepartment"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_topic_controller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_accm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_controller"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_topic_vote_controller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_accm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_vote_controller"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_topic_vote_staticer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_accm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_vote_staticcer"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/applicatemember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_accm"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/topic_applicatemember"
+                    android:textSize="@dimen/textsize_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/topic_addthree_btn_save_bg_color"
+                    android:onClick="clickPre"
+                    android:text="上一步"
+                    android:textColor="@color/bg_white" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_addthree_btn_save_bg_color"
+                    android:onClick="clickChangeTopic"
+                    android:text="变更议题"
+                    android:textColor="@color/bg_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

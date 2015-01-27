@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/bg_conference_begin_two"
+        android:orientation="vertical" >
+
+        <ListView
+			android:fadingEdge="none"
+            android:id="@+id/conference_begin_three_two_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@null"
+            android:divider="@color/bg_green"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+
+
+            <LinearLayout android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"   
+                android:orientation="horizontal"                   
+                style="@android:style/ButtonBar"
+                android:background="@color/white"   
+                
+                >  
+  
+                <Button android:id="@+id/btn_listview"  
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/margin_8"  
+                    android:layout_height="35dp"    
+                    android:layout_width="0dp"   
+                    android:layout_weight="1" 
+                    android:textSize="@dimen/textsize_14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_vote_bg"   
+                    android:text="删 除"
+                    android:onClick="clickRemoveTopic"/>   
+                <Button android:id="@+id/btn_emptyview"  
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/margin_8"
+                    android:layout_height="35dp"  
+                    android:layout_width="0dp"  
+                    android:layout_weight="1" 
+                    android:textSize="@dimen/textsize_14" 
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_voteresult_top" 
+                    android:text="发 起"
+                    android:onClick="clickPublish"/>        
+            </LinearLayout>  
+        
+    </LinearLayout>
+
+</LinearLayout>

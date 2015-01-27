@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_red" >
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:onClick="clickBackToFormer"
+            android:background="@drawable/back"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="@string/topic_member_change_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_18" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_glass"
+            android:onClick="clickTitleSearch" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFCC"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_member_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/member_source"
+                android:textColor="@color/bg_red"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_member_source" >
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_member_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/member_org"
+                android:textColor="@color/bg_red"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_search_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_member_org"
+                android:hint="@string/member_org_hint"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_memeber_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/member_name"
+                android:textColor="@color/bg_red"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_search_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_memeber_name"
+                android:hint="@string/member_name_hint"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.0" />
+
+            <Button
+                android:id="@+id/imageButton1"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/topic_addthree_btn_upload_bg_color"
+                android:onClick="clickBeginSearch"
+                android:text="@string/search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="@string/you_also_can"
+                android:textColor="@color/bg_red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:onClick="clickCreateTemp"
+                android:clickable="true"
+                android:text="@string/create_temp"
+                android:textColor="@color/bg_green"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:onClick="clickFindTemp"
+                android:clickable="true"
+                android:text="@string/find_temp"
+                android:textColor="@color/bg_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="@string/temp_contact"
+                android:textColor="@color/bg_red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:background="#f9f9f9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/conf_joinmember_waitto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/conf_select_joinmember_waitto"
+            android:textColor="@color/bg_red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_4"
+            android:background="#CFCFCF" />
+
+        <TextView
+            android:id="@+id/conf_joinmember_has"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/conf_select_joinmember_has"
+            android:textColor="@color/bg_red"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#CFCFCF"
+            android:gravity="left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/conf_joinmember_slide_underline"
+                android:layout_width="0dip"
+                android:layout_height="2dip"
+                android:layout_weight="0.5"
+                android:background="@drawable/slider_underline"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_joinmember_waitto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <include layout="@layout/topic_change_joinmember_waitto_pannel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_joinmember_has"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <include layout="@layout/topic_change_joinmember_has_pannel" />
+    </LinearLayout>
+
+</LinearLayout>

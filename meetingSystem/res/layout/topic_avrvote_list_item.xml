@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    
+    <CheckBox 
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/topic_dianming"
+        android:textColor="@color/bg_red"
+        android:textSize="@dimen/textsize_18" />
+    
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        />
+
+	<TextView
+        android:id="@+id/tv_join_state"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_16"
+
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="出席会议"
+        android:textColor="@color/bg_red"
+        android:textSize="@dimen/textsize_14" />	    
+	<TextView
+        android:id="@+id/tv_vote_state"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="未表决"
+        android:textColor="@color/bg_red"
+        android:layout_marginRight="5dp"
+        android:textSize="@dimen/textsize_14" />       
+       
+
+</LinearLayout>

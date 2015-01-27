@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">会务平台</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 会议管理界面  ConfenenceManagementActivity -->
+
+
+    <!-- 会议发起ConBeginOneActivity -->
+    <string name="conf_sendup">会议发起</string>
+    <string name="conf_title">会议标题:</string>
+    <string name="conf_inputtitle">请输入会议标题</string>
+    <string name="conf_inputdesc">请输入会议摘要</string>
+    <string name="conf_desc">会议摘要:</string>
+    <string name="conf_type">会议类型</string>
+    <string name="conf_type_">会议类型:</string>
+    <string name="conf_department">创建单位:</string>
+    <string name="conf_address">会议地点</string>
+    <string name="conf_conclusion">会议结论:</string>
+    <string name="conf_jigoulevel">机构级别</string>
+    <string name="conf_typename">类型名称</string>
+    <string name="conf_starttime">起始时间</string>
+    <string name="conf_endtime">终止时间</string>
+    <string name="conf_workmeb">会务工作人员</string>
+    <string name="conf_joinmeb">会务人员</string>
+    <string name="conf_contromeb">控制人</string>
+    <string name="conf_meettopic">议题</string>
+    <string name="conf_accessmeb">审核人</string>
+    <string name="conf_topic_list">议题列表</string>
+    <string name="conf_choicetopic">选择议题</string>
+    <string name="conf_newtopic">新建议题</string>
+    <string name="conf_home_title">主   页</string>
+    <string name="conf_detail_title">会议详情</string>
+    <string name="conf_detail_timeupdate">时间变更</string>
+    <string name="conf_detail_start">开始</string>
+    <string name="conf_detail_dianming">点名</string>
+    <string name="conf_detail_time">时间:</string>
+    <string name="conf_detail_startVote">表决开始</string>
+    <string name="conf_detail_voteResult">表决结果</string>
+    <string name="conf_virtual_title">虚拟会议</string>
+    <string name="vote_title_main">表决</string>
+    <string name="conf_topic_tochoose">待选议题</string>
+    <string name="conf_topic_haschoose">已选议题</string>
+    <string name="conf_join_choose_member">人员选择</string>
+    <!-- ConfChange -->
+    <string name="conf_change_title">会议变更</string>
+    <string name="conf_member_change_success">会务工作人员变更成功</string>
+    <string name="conf_member_change_fail">会务工作人员变更失败</string>
+    <string name="conf_member_change_title">会务工作人员变更</string>
+    <string name="conf_delete_topic_success">删除议题成功</string>
+    <string name="conf_delete_topic_fail">删除议题失败</string>
+    <string name="topic_member_change_success">议题人员变更成功</string>
+    <string name="topic_member_change_fail">议题人员变更失败</string>
+    <string name="topic_member_change_title">议题人员变更</string>        
+    <!-- ConfSelectJoinMember -->
+    <string name="conf_select_joinmember">请选择会议参会人</string>
+    <string name="conf_select_joinmember_waitto">待选</string>
+    <string name="conf_select_joinmember_has">已选</string>
+    <string name="conf_select_joinmember_other">会务相关人员</string>
+
+    <!-- ConfCheckDetailActivity -->
+    <string name="conference_detail_creator">创建人：</string>
+    <string name="conference_check_reason">请输入审核意见：</string>
+    <string name="conference_check_reason_hint">同意此会议</string>
+    <string name="conference_check_detail_title">会议审核</string>
+    <string name="conference_public_reason">请输入发布意见：</string>
+    <string name="conference_hint_title">提示：</string>
+    <string name="conference_hint_detail">请进入议题列表控制议题</string>
+
+    <!-- conference state -->
+    <string name="conference_status">会议状态：</string>
+    <string name="conference_status_toupload">待上传</string>
+    <string name="conference_status_tocheck">待审核</string>
+    <string name="conference_status_checkpass">已审核</string>
+    <string name="conference_status_checkreject">审核未通过</string>
+    <string name="conference_status_topublish">待发布</string>
+    <string name="conference_control">会议控制</string>
+    <string name="conference_change">会议变更</string>
+    <string name="conference_join">待我参加</string>
+    <string name="conference_schedule">会议日程</string>
+    <string name="conference_going">进行中</string>
+    <string name="conference_publish">会议发布</string>
+    <string name="conference_mystart">我发起的会议</string>
+    <string name="conference_conclusion">请输入会议结论：</string>
+    <string name="conference_conclusion_hint">此次会议...</string>
+    <string name="conference_history">会议历史</string>
+    <string name="conference_conclusion_2">请输入会议总结报告：</string>
+    <string name="conf_conclusion_2">会议总结报告:</string>
+    <string name="conf_finish_2">会议结束并归档</string>
+    <string name="conference_going_biaojue">表决控制</string>
+
+    <!-- LoginActivity -->
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_username_hint">请输入用户名</string>
+    <string name="login_save_password">记住密码</string>
+    <string name="login_networkset_str">网络设置</string>
+
+    <!-- ChangePasswordActivity -->
+    <string name="charge_pwd_account">账号：</string>
+    <string name="charge_pwd_verify">点击验证</string>
+    <string name="charge_pwd_verify_code">验证码：</string>
+    <string name="charge_pwd_new_pwd">新密码：</string>
+    <string name="charge_pwd_new_pwd_again">再次确认：</string>
+    <string name="charge_pwd_confirm">确认修改</string>
+    <!-- RegisterActivity -->
+    <string name="register_account">手机号</string>
+    <string name="register_new_pwd">设置密码</string>
+    <string name="register_new_pwd_again">再次输入密码</string>
+    <string name="register_identify_number">身份证号</string>
+    <string name="register_org_number">机构代码</string>
+    <string name="register_verify_code">验证码</string>
+    <string name="login_voip_register_notice">收不到短信？请点击</string>
+    <string name="login_voip_register">语音验证</string>
+
+    <!-- VoteActivity -->
+    <string name="vote_title">投   票</string>
+    <string name="vote_vote">投 票</string>
+    <string name="vote_agree">同意</string>
+    <string name="vote_give_up">弃权</string>
+    <string name="vote_unagree">反对</string>
+    <string name="vote_people_num">人数</string>
+    <string name="vote_people_unit">人</string>
+    <string name="vote_card_unit">票</string>
+    <string name="vote_type">表决类型：</string>
+    <string name="anonymous_vote">匿名投票</string>
+    <string name="real_name_vote">实名投票</string>
+    <string name="do_vote">正在投票</string>
+    <string name="attenders_count">到会人数：</string>
+    <string name="attenders_unvote_count">到会的未投票人数：</string>
+    <string name="upload_votes">正在提交投票</string>
+    
+    <!--  avr vote  -->
+    
+    <string name="vote_avr_title">发起语音表决</string>
+    <!-- VoteResult -->
+    <string name="votes_all">所有投票</string>
+    <string name="voter_count">人数</string>
+    <string name="vote_scene">现场投票</string>
+    <string name="vote_mobile_app">手机客户端</string>
+    <string name="vote_avr">语音投票</string>
+    <string name="vote_pc">电脑客户端</string>
+    <string name="vote_all_people_count">要投票的总人数：</string>
+
+    <!-- Dianming -->
+    <string name="topic_dianming">点  名</string>
+    <string name="topic_dianming_chuxi">出席</string>
+    <string name="topic_dianming_weichuxi">缺席</string>
+    <string name="topic_dianming_qingjia">请假</string>
+
+    <!-- TodaySchedule -->
+    <string name="today_schedule_title">日程</string>
+    <string name="today_schedule_detail">日程详情</string>
+
+    <!-- 表决 -->
+    <string name="vote_manager_titlev">表   决</string>
+
+    <!-- UnArrivalActivity -->
+    <string name="unarrival_title">未  到</string>
+    <string name="unarrival_tel_msg">短信提醒</string>
+    <string name="unarrival_tel_void">语音提醒</string>
+    <!-- ConMyConTimeCActivity -->
+    <string name="con_my_con_time_title">时间变更</string>
+    <string name="con_my_con_time_start">起止时间</string>
+    <string name="con_my_con_time_end">终止时间</string>
+    <string name="con_my_con_time_pre">提前</string>
+    <string name="con_my_con_time_delay">延后</string>
+    <string name="con_my_con_time_hour">小时</string>
+    <string name="con_my_con_time_minute">分钟</string>
+
+    <!-- TestData -->
+    <string name="test_login_account">admin</string>
+    <string name="test_login_pwd">147369</string>
+    <string name="test_arrival_name">提议需要尽快调，请尽快投票</string>
+    <string name="test_vote_name">五悟空</string>
+    <string name="test_today_schedule_title">五悟空。。。。。......</string>
+    <string name="test_today_schedule_keys">摘要:</string>
+    <string name="test_today_schedule_address">地点:</string>
+    <string name="test_today_schedule_value">五悟空   猴子</string>
+    <string name="test_today_schedule_time">2014-08-31——2014-09-01</string>
+    <string name="test_today_schedule_month">8月25</string>
+    <string name="test_today_schedule_title_two">议题二</string>
+
+    <!-- TopicDetailActivity -->
+    <string name="topic_detail_title_draft">草案详情</string>
+    <string name="topic_detail_title">议题详情</string>
+    <string name="topic_detail_desc">议题摘要:</string>
+    <string name="topic_detail_keyword">关键词:</string>
+    <string name="topic_detail_startTime">发起日期:</string>
+    <string name="topic_detail_endTime">截止日期:</string>
+    <string name="topic_detail_accesspepole">建议审核人:</string>
+    <string name="topic_detail_controllpepole">议定人:</string>
+    <string name="topic_detail_topicresult">议题结论:</string>
+    <string name="topic_detail_timeupdate">时间变更</string>
+    <string name="topic_detail_start">开始</string>
+    <string name="topic_detail_dianming">点名</string>
+    <string name="topic_detail_startvote">开始表决</string>
+    <string name="topic_detail_avr_vote">发起语音表决</string>
+    <string name="topic_detail_dovote">表决</string>
+    <string name="topic_detail_voteresult">表决结果</string>
+    <string name="topic_detail_endvote">结束表决</string>
+
+    <!-- TopicHouseActivity -->
+    <string name="topic_house_title">议题草案库</string>
+    <string name="topic_house_todayAdd">今日新增</string>
+    <string name="topic_house_historytopic">历史议题</string>
+    <string name="topic_house_topickeywords">议题关键字:</string>
+    <string name="topic_house_topicdesc">议题内容...</string>
+    <string name="topic_house_topictime">2014-08-09-7:30---2014-08-09-9:30</string>
+    <string name="topic_main_title">议   题</string>
+    <string name="topic_db_search_hint">请输入要搜索的内容</string>
+
+    <!-- TopicAddOneActivity -->
+    <string name="topic_newtopic">议题草案</string>
+    <string name="topic_title">议题标题:</string>
+    <string name="topic_inputtitle">请输入议题标题</string>
+    <string name="topic_inputdesc">请输入议题内容</string>
+    <string name="topic_desc">议题内容:</string>
+    <string name="topic_type">议题类型</string>
+    <string name="topic_jigoulevel">机构级别</string>
+    <string name="topic_typename">类型名称</string>
+    <string name="topic_caoan_title">议题草案标题:</string>
+    <string name="topic_caoan_desc">议题草案内容:</string>
+    <string name="topic_caoan_inputtitle">请输入议题草案标题</string>
+    <string name="topic_caoan_inputdesc">请输入议题草案内容</string>
+    <string name="topic_my_topic_title">我的提案</string>
+    <string name="topic_online">已提交</string>
+    <string name="topic_local">待提交</string>
+
+    <!-- TopicAddTwoActivity -->
+    <string name="topic_starttime_note">建议开始时间</string>
+    <string name="topic_endtime_note">建议结束时间</string>
+    <string name="topic_starttime">起始时间</string>
+    <string name="topic_endtime">终止时间</string>
+    <string name="topic_targetdepartment">目标单位</string>
+    <string name="topic_joinmember">建议议定人</string>
+    <string name="topic_joingroup">选择群组</string>
+    <string name="topic_applicatemember">审核人</string>
+    <string name="topic_accessmember">列席人人</string>
+
+    <!-- TopicCheckDetailActivity -->
+    <string name="topic_detail_creator">创建人：</string>
+    <string name="topic_check_reason">请输入审核意见：</string>
+    <string name="topic_check_reason_hint">同意，议题还是不错的</string>
+    <string name="topic_check_detail_title">议题审核</string>
+
+    <!-- TopicAddThreeActivity -->
+    <string name="topic_upload">立即提交</string>
+    <string name="topic_save">保存草稿</string>
+    <string name="topic_pre">上一步</string>
+    <string name="topic_addthree_starttime">发起日期：</string>
+    <string name="topic_addthree_endtime">截止日期：</string>
+    <string name="topic_addthree_targetdepartment">目标单位：</string>
+    <string name="topic_addthree_joinmember">建议议定人：</string>
+    <string name="topic_addthree_kewords">关键字：</string>
+    <string name="topic_editthree_edit">编辑完成</string>
+    <string name="topic_status">状态：</string>
+    <string name="topic_addthree_checker">审核人：</string>
+
+    <!-- TopicWaitMyCheckActivity -->
+    <string name="topic_wait_my_check_title">  待我审核</string>
+    <string name="topic_keywords">议题关键字</string>
+
+    <!-- TopicDetailActivity -->
+    <string name="topic_meettopic">议题</string>
+    <string name="topic_choicetopic">选择议题</string>
+    <string name="topic_virtual_title">虚拟会议</string>
+
+    <!-- TopicSelectSuggustedAttender -->
+    <string name="topic_select_attender">请选择建议议定人</string>
+    <string name="topic_select_attender_waitto">待选</string>
+    <string name="topic_select_attender_has">已选</string>
+    <!-- TopicSelectOrg -->
+    <string name="topic_selorg_title">选择组织机构</string>
+    <string name="topic_pleaseinputorg">请输入组织机构:</string>
+    <string name="topic_selorg_suggestion_input">如，双林村，桂花镇等</string>
+    <string name="topic_plsinput_emptytext">请输入组织机构</string>
+    <string name="topic_noorg">要查询的组织机构不存在</string>
+
+    <!-- home begin -->
+    <string name="job_check_topic">待我审核的议题：</string>
+    <string name="job_check_meet">待我审核的会议：</string>
+    <string name="job_ctrl_topic">待我控制的议题：</string>
+    <string name="job_publish_meet">待我发布的会议：</string>
+    <string name="job_ctrl_meet">待我控制的会议：</string>
+    <string name="job_attend_meet">待我参加的会议：</string>
+    <string name="job_vote">待我表决的议题：</string>
+    <!-- home end -->
+
+
+    <!-- setting -->
+    <string name="setting_url_ip">网址/IP:</string>
+    <string name="setting_input_url">请输入网址/IP</string>
+    <string name="setting_test_begin">正在验证是否可以连接，请等待</string>
+    <string name="setting_url_saved">网址保存成功</string>
+    <string name="setting_test_ok">连接成功</string>
+    <string name="setting_test_fail">连接失败</string>
+    <string name="setting_network">网络设置</string>
+    <string name="setting_common_group_remark">备注：</string>
+    <string name="setting_common_group_createtime">创建时间：</string>
+    <string name="setting_common_group_title">常用群组</string>
+    <string name="setting_common_group_new">创建常用群组</string>
+    <string name="setting_common_group_name_hint">请输入群组名称</string>
+    <string name="setting_common_group_name">群组名称：</string>
+    <string name="setting_common_group_remark_hint">请输入群组的其他信息</string>
+    <string name="setting_common_group_select_member">选择群组成员</string>
+    <string name="setting_common_group_member_title">群组成员</string>
+    <string name="setting_common_group_delete_group">删除群组</string>
+    <string name="setting_check_update">正在检查更新..</string>
+    <string name="setting_voip_forget_notice">收不到短信？请点击语音验证</string>
+    <string name="temp_attender_title">创建参会人/议定人</string>
+    <string name="temp_attender_name">姓名</string>
+    <string name="temp_attender_org">单位</string>
+    <string name="temp_attender_post">职位</string>
+    <string name="temp_attender_phone">电话</string>
+    <string name="temp_attender_card_id">身份证号</string>
+    <string name="temp_attender_sex">性别</string>
+    <string name="temp_attender_sex_male">男</string>
+    <string name="temp_attender_sex_female">女</string>
+    <string name="temp_attender_submit">提交</string>
+    <string name="temp_attender_submit_success">创建成功，您可以点击&#160;&#160;查找&#160;&#160;进行搜索</string>
+    <string name="temp_attender_submit_fail">创建失败</string>
+    <!-- util -->
+    <string name="time_select">日期时间选择</string>
+    <string name="your_sel_time">所选时间:</string>
+
+    <!-- error -->
+    <string name="error_network">网络异常</string>
+    <string name="error_person_duplicted">所选的人员已经在参会列表中</string>
+    <string name="error_no_person_to_add">请选择参会人员</string>
+    <string name="error_no_suggested_atttender">请选择建议议定人</string>
+    
+    <string name="error_no_selected_attender">请选择要删除的参会人员</string>
+    <string name="error_no_member_selected">请选择要删除的人员</string>
+    <string name="error_dataabout">数据异常</string>
+    <string name="error_fileabout">文件异常</string>
+    <string name="error_empty_orgno">请先选择目标单位</string>
+    <string name="error_upload_failed">上传失败</string>
+    <string name="error_no_topic_keys">请填写议题关键词</string>
+    <string name="error_no_topic_summary">请填写议题摘要</string>
+    <string name="error_no_topic_starttime">请填写议题起始时间</string>
+    <string name="error_no_topic_endtime">请填写议题终止时间</string>
+    <string name="error_no_topic_vote_starttime">请填写投票终止时间</string>
+    <string name="error_no_topic_vote_endtime">请填写投票终止时间</string>
+    <string name="error_no_topic_endtime_too_small">结束时间不能小于当前时间</string>
+    <string name="error_no_topic_time_too_small">开始时间不能小于当前时间</string>
+    <string name="error_no_topic_org">请选择目标单位</string>
+    <string name="error_no_topic_attender">请选择议定人</string>
+    <string name="error_no_topic_checker">请选择审核人</string>
+    <string name="error_no_topic_controller">请选择议题控制人</string>
+    <string name="error_no_topic_vote_controller">请选择表决控制人</string>
+    <string name="error_no_topic_vote_staticcer">请选择表决统计人</string>
+    <string name="error_topic_vote_timeerror">表决终止时间必须大于起始时间</string>
+    <string name="error_topic_vote_timeerror2">表决终止时间-必须-在议题的时间范围内</string>
+    <string name="error_topic_vote_timeerror1">表决启始时间-必须-在议题的时间范围内</string>
+    <string name="error_topic_timeerror">议题终止时间必须大于起始时间</string>
+    <string name="error_topic_check_noreason">请输入审核意见</string>
+    <string name="error_meet_noconclusion">请输入会议结论</string>
+    <string name="error_search_atleast_one">组织机构或姓名，至少要输入一个</string>
+    <string name="error_search_no_org">请输入组织机构</string>
+    
+    <string name="error_no_group_name">请输入群组名称</string>
+    <string name="error_no_group_member_selected">没用要添加到群组的人员</string>
+    <string name="error_no_group_or_member">请添加建议议定人或群组</string>
+    <string name="error_no_conf_title">请输入会议标题</string>
+    <string name="error_no_conf_content">请输入会议摘要</string>
+    <string name="error_no_conf_addr">请输入会议地点</string>
+    <string name="error_no_conf_type">请选择会议类型</string>
+    <string name="error_no_conf_joinmember">请选择会务人员</string>
+    <string name="error_no_conf_ctrlmember">请选择会议控制人</string>
+    <string name="error_no_conf_accessmember">请选择会议审核人</string>
+    <string name="error_no_conf_starttime">请选择会议开始时间</string>
+    <string name="error_no_conf_enddtime">请选择会议结束时间</string>
+    <string name="error_no_conf_vilid_time">会议"结束时间"  必须大于     "开始时间"</string>
+    <string name="error_no_conf_topic_edited">请完善议题信息(点击菜单项进入议题详情进行编辑)</string>
+    <string name="error_conf_topics_part_edited">还有议题没有完善：</string>
+    <string name="error_no_topic_conclusion">请填写议题结论</string>
+    <string name="error_temp_person_no_name">请输入姓名</string>
+    <string name="error_temp_person_no_phone">请输入电话号码</string>
+    <string name="error_temp_person_no_org">请输入单位</string>
+    <string name="error_temp_person_no_post">请输入职位</string>
+    <string name="error_temp_person_no_idcard">请输入身份证号码</string>
+    <string name="error_temp_person_invalid_idcard">身份证号码位数不够</string>
+    <string name="error_no_document">请选择要上传的文件</string>
+    <string name="error_attachment_unuploaded">请上传附件</string>
+    <string name="error_no_room_addr">请输入地址</string>
+    <string name="error_no_room_detail">请输入详情</string>
+    <string name="error_no_room_sits">请输入座位数</string>
+    <string name="error_votecount_exceeding">投票数 不等于 未投票人数</string>
+    <string name="error_no_auth">对不起，您没有权限</string>
+    <string name="error_topic_time_error">议题时间必须在会议时间范围内</string>
+    <string name="error_topic_starttime">议题开始时间不在会议时间范围内</string>
+    <string name="error_topic_endtime">议题结束时间不在会议时间范围内</string>
+    <string name="error_topic_checker_uneditable">已审核的议题或会议中新建的议题审核人不能编辑</string>
+    <string name="error_filesize_toolarge">文件大小不能超过2M</string>
+    <string name="error_login">登录失效，请重新登录</string>
+    
+
+    <!-- result -->
+    <string name="result_success">上传成功</string>
+    <string name="result_saved">已保存</string>
+    <string name="result_savedfail">保存失败</string>
+    <string name="result_updated">更新完毕</string>
+
+    <!-- public string begin -->
+    <!-- public string begin -->
+
+    <string name="topic_call_over_history_detail_title">点名记录详情</string>
+    <string name="topic_call_over_history">点名记录</string>
+    <string name="topic_new_call_over">新增点名</string>
+    <string name="attender_conflict">冲突列表</string>
+    <string name="topic_Attribute">议题属性：</string>
+    <string name="topic_Attribute_inmeetcreate">会议中创建</string>
+    <string name="topic_Attribute_topicdb">从议题库中选取</string>
+    <string name="conf_time_range">会议时间段</string>
+    <string name="topic_vote_control_title">表决控制</string>
+    <string name="topic_selected_group">已选群组</string>
+    <string name="topic_selected_indi">已选个人</string>
+    <string name="uploading">正在上传</string>
+    <string name="updating">正在更新</string>
+    <string name="deleting">正在删除</string>
+    <string name="loading">努力加载中,请稍等</string>
+    <string name="topic_state">议题状态</string>
+    <string name="topic_check_creason">审核意见:</string>
+    <string name="topic_edit">议题编辑</string>
+    <string name="topic_change">议题变更</string>
+    <string name="topic_madd">添加议题</string>
+    <string name="topic_is_vote">是否表决</string>
+    <string name="topic_is_meetcall">是否开电话会议</string>
+    <string name="topic_vote_withname">记名</string>
+    <string name="topic_vote_withoutname">匿名</string>
+    <string name="topic_vote_novote_abstain">未投票是否视为弃权(勾选了视为弃权)</string>
+    <string name="topic_time_begin_end">议题时间段:</string>
+    <string name="topic_vote_time_begin_end">表决时间段:</string>
+    <string name="topic_attender">议定人</string>
+    <string name="topic_controller">议题控制人</string>
+    <string name="topic_vote_controller">表决控制人</string>
+    <string name="topic_vote_staticcer">表决统计人</string>
+    <string name="topic_list_title">议题列表</string>
+    <string name="topic_control_title">议题控制</string>
+    <string name="topic_vote_manage">投票管理</string>
+    <string name="topic_detail_call">申请加入电话会议</string>
+    <string name="topic_virtual">虚拟会议室</string>
+    <string name="topic_wait_my_control_title">  待我操作</string>
+    <string name="topic_wait_my_handle_title">待办工作</string>
+    <string name="topic_wait_my_ctrl_title">议题控制</string>
+    <string name="topic_conclusion">议题结论：</string>
+    <string name="topic_conclusion_hint">请输入议题结论...</string>
+    <string name="appendix">附件上传</string>
+    <string name="attachment">附件列表</string>
+    <string name="null_str"></string>
+    <string name="appendix_upload">上&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;传</string>
+    <string name="mediafile_select">选择媒体文件</string>
+    <string name="ordinaryfile_select">选择一般文件</string>
+    <string name="file_select">选择文件</string>
+    <string name="delete_files">删除文件</string>
+    <string name="already_uploaded">已上传：</string>
+    <string name="to_upload">待上传：</string>
+    <string name="topic_conclusion_meeting">会议决议：</string>
+    <string name="topic_conclusion_hint_meeting">请输入会议讨论决议</string>
+    <string name="topic_finish_meeting">议题归档</string>
+    <string name="open_file_failed">文件打开失败</string>
+    <string name="open_file_error_format">文件格式不正确</string>
+    <string name="open_file_none">您没有选择任何文件</string>
+    <string name="empty_hint">文件夹为空</string>
+    <string name="sdcard_unmonted_hint">请先挂载SD卡</string>
+    <string name="member_source">人员来源：</string>
+    <string name="member_source_org">人事档案</string>
+    <string name="member_source_resident">居民</string>
+    <string name="member_source_other">其他</string>
+    <string name="member_org">组织机构：</string>
+    <string name="member_org_hint">如双林村，桂花镇党政办</string>
+    <string name="member_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+    <string name="member_name_hint">李四</string>
+    <string name="search">搜&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;索</string>
+    <string name="create_temp">创建</string>
+    <string name="you_also_can">您也可以：</string>
+    <string name="find_temp">查找</string>
+    <string name="temp_contact">临时人员</string>
+    <string name="meet_hourse_add">添加会议室</string>
+    <string name="meet_hourse_select">选择会议室</string>
+    <string name="meet_hourse_addr">地址</string>
+    <string name="meet_hourse_addr_hint">含光路25号市民活动中心</string>
+    <string name="meet_hourse_addr_detail">详情</string>
+    <string name="meet_hourse_addr_detail_hint">B座301室</string>
+    <string name="meet_hourse_type">会议室类型：</string>
+    <string name="meet_hourse_type_1">方形</string>
+    <string name="meet_hourse_type_2">圆型</string>
+    <string name="meet_hourse_sits_count">座位数：</string>
+    <string name="draft_box">草稿箱</string>
+    <string name="topic_is_meetcall_">是否开电话会议:</string>
+    <string name="topic_is_vote_">是否表决:</string>
+    <string name="common_yes">是</string>
+    <string name="common_no">否</string>
+    <string name="topic_vote_type_">表决类型:</string>
+    <string name="topic_vote_novote_abstain_">未投票是否视为弃权:</string>
+    <string name="topic_vote_starttime_">表决开始时间:</string>
+    <string name="topic_vote_endtime_">表决结束时间:</string>
+    <string name="topic_controller_">议题控制人:</string>
+    <string name="topic_vote_controller_">表决控制人:</string>
+    <string name="topic_vote_staticcer_">表决统计人:</string>
+    <string name="topic_attender_">议定人:</string>
+    <!-- topic control state -->
+    <string name="topic_control_status_tostart">未开始</string>
+    <string name="topic_control_status_started">已开始</string>
+    <string name="topic_control_status_voting">表决中</string>
+    <string name="topic_control_status_voted">表决已结束</string>
+    <string name="topic_control_status_ended">议题已结束</string>
+    <!-- topic state -->
+    <string name="topic_status_toupload">待上传</string>
+    <string name="topic_status_tocheck">待审核</string>
+    <string name="topic_status_checkpass">已审核</string>
+    <string name="topic_status_checkreject">审核未通过</string>
+    <!-- vote result -->
+    <string name="vote_result_quote">弃权</string>
+    <string name="vote_result_agree">同意</string>
+    <string name="vote_result_unagree">反对</string>
+    <!-- voip -->
+    <string name="voip_unknown_user">未知联系人</string>
+    <string name="str_call_status" formatted="false">延迟时间%d（毫秒）丢包率:%d</string>
+    <string name="voip_calling_finish">通话结束</string>
+    <string name="voip_calling_wait">等待对方接听&#8230;</string>
+    <string name="voip_calling_timeout">无人应答,呼叫超时</string>
+    <string name="voip_call_fail">呼叫失败，请稍后重试&#8230;</string>
+    <string name="voip_calling_network_instability">对方不在线或者网络不给力,请直呼</string>
+    <string name="voip_call_back_success">回拨呼叫成功，请注意接听系统来电!</string>
+    <string name="voip_call_connect">正在呼叫对方，请稍后&#8230;</string>
+    <string name="voip_call_back_connect">正在呼叫，请稍后&#8230;</string>
+    <string name="voip_calling_refuse">对方拒接，请稍后再试</string>
+    <string name="voip_calling_busy">对方正忙，请稍后再拨</string>
+    <string name="voip_call_fail_no_cash">呼叫失败，请查询余额</string>
+    <string name="voip_is_talking_tip">云通讯正在通话中, 轻击以继续</string>
+    <string name="str_voip_not_support">该版本暂不不支持语音</string>
+    <string name="str_video_not_support">该版本暂不不支持视频</string>
+    <string name="str_other_voip_not_support">对方版本不支持音频聊天</string>
+
+    <!-- network access -->
+    <string name="network_accessable">网络已连接</string>
+    <string name="network_unaccessable">网络不可用</string>
+    <!-- public string end -->
+    <!-- public string end -->
+    
+     <!-- 二维码 -->
+    <string name="scan_text">将二维码放入框内</string>
+	<string name="qcode">二维码：</string>
+	<string name="qcode_errmsg">二维码扫描失败，请重新扫描。</string>
+    <string name="qcode_invalid">无效的二维码！</string>
+
+</resources>

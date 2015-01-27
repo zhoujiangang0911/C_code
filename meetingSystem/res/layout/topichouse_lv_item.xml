@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/topic_house_lvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topichouse_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/topic_house_todayAdd"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/topichouse_content_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:id="@+id/topic_house_lvtopicdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/topic_house_topicdesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/topic_house_topickeywords"
+                android:textColor="@color/bg_red" />
+
+            <TextView
+                android:id="@+id/topic_house_lvtopickeywords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="  议题  内容" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic_house_lvtopictime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/topic_house_topictime" />
+    </LinearLayout>
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/topichouse_content_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:id="@+id/topic_house_lvtopicdesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/topic_house_topicdesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/topic_house_topickeywords"
+                android:textColor="@color/bg_red" />
+
+            <TextView
+                android:id="@+id/topic_house_lvtopickeywords2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="  议题  内容" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic_house_lvtopictime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/topic_house_topictime" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_login_login_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/attenders_unvote_count"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+
+
+
+            <TextView
+                android:id="@+id/tv_vote_people_num"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/editText_height"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint=""
+                android:maxLength="50"
+                android:paddingLeft="@dimen/margin_4"
+                android:textSize="@dimen/textsize_18"
+                android:singleLine="true"
+                android:textColor="@color/bg_black"
+                android:textColorHint="@color/bg_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_people_unit"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_agree"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="@dimen/editText_height"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1.0"
+            android:background="@drawable/et_anonymous_vote_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:background="@drawable/btn_minus"
+                android:onClick="clickAgreeSub"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_vote_agree"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/editText_height"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="50"
+                android:paddingLeft="@dimen/margin_4"
+                android:singleLine="true"
+                android:textColor="@color/bg_black"
+                android:textColorHint="@color/bg_black" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:background="@drawable/btn_add"
+                android:onClick="clickAgreeAdd"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_card_unit"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_unagree"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="@dimen/editText_height"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1.0"
+            android:background="@drawable/et_anonymous_vote_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:background="@drawable/btn_minus"
+                android:onClick="clickUbAgreeSub"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_vote_unagree"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/editText_height"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="50"
+                android:paddingLeft="@dimen/margin_4"
+                android:singleLine="true"
+                android:textColor="@color/bg_black"
+                android:textColorHint="@color/bg_black" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:background="@drawable/btn_add"
+                android:contentDescription="@null"
+                android:onClick="clickUbAgreeAdd" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_card_unit"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/et_login_login_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_give_up"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="@dimen/editText_height"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1.0"
+            android:background="@drawable/et_anonymous_vote_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:background="@drawable/btn_minus"
+                android:onClick="clickGiveUpSub"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_vote_give_up"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/editText_height"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="50"
+                android:paddingLeft="@dimen/margin_4"
+                android:singleLine="true"
+                android:textColor="@color/bg_black"
+                android:textColorHint="@color/bg_black" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8"
+                android:background="@drawable/btn_add"
+                android:onClick="clickGiveUpAdd"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="@string/vote_card_unit"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+    <ImageButton
+        android:id="@+id/ibtn_register_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:background="@drawable/submit"
+        android:contentDescription="@null"
+        android:onClick="clickAnonymousNameVoteSubmit" />
+
+</LinearLayout>

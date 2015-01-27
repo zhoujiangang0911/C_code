@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/menu_bottom_bg"
+    android:gravity="center_vertical"
+    android:checkedButton="@+id/rbtn_menu_home"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/rbtn_menu_homes"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_menu_home"
+        android:button="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/rbtn_menu_topic"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_menu_topic"
+        android:button="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/rbtn_menu_conference"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_menu_conference"
+        android:button="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/rbtn_menu_vote"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_menu_vote"
+        android:button="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/rbtn_menu_setting"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_menu_setting"
+        android:button="@null" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</RadioGroup>

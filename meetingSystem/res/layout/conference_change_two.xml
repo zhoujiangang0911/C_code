@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/backhome"
+            android:onClick="clickBackToFormer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/conf_change_title"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/conf_twolisttype_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/conf_accessmeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_accm"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_accessmeb"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/conf_contromeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_conm"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_contromeb"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/conf_joinmeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/conf_twolisttype_bg"
+                    android:drawableLeft="@drawable/conf_tv_joinm"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_workmeb"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/conf_two_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/conf_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/conf_tv_btime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:onClick="clickStarttime"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_starttime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/conf_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/conf_twotitlebg"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/conf_tv_etime"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:onClick="clickEndtime"
+                    android:paddingLeft="10dp"
+                    android:text="@string/conf_endtime"
+                    android:textColor="@color/bg_blue"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_conf_appendix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/topic_addthree_textarea_bg"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appendix"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/topic_addthree_btn_upload_bg_color"
+                        android:onClick="clickSelectMediaFile"
+                        android:text="@string/mediafile_select"
+                        android:textColor="#EEEEEE"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="0.1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/topic_addthree_btn_upload_bg_color"
+                        android:gravity="center|center_vertical"
+                        android:onClick="clickSelectOrdinaryFile"
+                        android:text="@string/ordinaryfile_select"
+                        android:textColor="#EEEEEE"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:id="@+id/tv_appendix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/topic_addthree_btn_upload_bg_color"
+                        android:onClick="clickClear"
+                        android:text="@string/delete_files"
+                        android:textColor="#EEEEEE"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="0.1" />
+
+                    <Button
+                        android:id="@+id/btn_upload_attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/topic_addthree_btn_upload_bg_color"
+                        android:onClick="clickUpLoadFile"
+                        android:text="@string/appendix_upload"
+                        android:textColor="#EEEEEE"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_appendix_uploaded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/conf_btn_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="@color/bg_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="上一步"
+                    android:background="@drawable/topic_addthree_btn_save_bg_color" />
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="@color/bg_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="变更会议基本信息"
+                    android:onClick="clickSaveBaseInfo"
+                    android:background="@drawable/topic_addthree_btn_save_bg_color" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/conf_topic_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/conf_listtype_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/conf_level"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:onClick="clickTopicList"
+                android:paddingLeft="5dp"
+                android:text="@string/conf_topic_list"
+                android:textColor="@color/bg_red"
+                android:textSize="@dimen/textsize_16"
+                android:layout_marginBottom="30dp"
+               />
+  
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

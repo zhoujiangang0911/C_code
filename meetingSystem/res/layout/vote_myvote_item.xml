@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="议题内容提要" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="议题关键字" />
+
+        <TextView
+            android:textColor="#00ff00"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="议题" />
+
+        <TextView
+              android:textColor="#00ff00"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-08-09-7:00--2014-08-09-7:00"
+            />
+    </LinearLayout>
+
+</LinearLayout>

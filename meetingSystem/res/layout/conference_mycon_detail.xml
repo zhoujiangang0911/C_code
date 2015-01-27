@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_green" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:onClick="clickBackToFormer"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/conf_detail_title"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/conf_detail_listbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="宅基地问题"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="进行中...."
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/conf_detail_bg"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center_vertical"
+                    android:text="@string/conf_desc"
+                    android:textColor="@color/bg_red"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="  几点睡的那就，才能，祝你们，占内存，机啊福建阿里就发了"
+                    android:textSize="@dimen/textsize_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_vertical"
+                        android:text="@string/conf_detail_time"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:singleLine="true"
+                        android:text="2014-08-09-7:30----2014-08-09-9:30"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/time_change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_listtype_bg"
+                    android:drawableLeft="@drawable/conf_detail_update"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_detail_timeupdate"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/begin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_listtype_bg"
+                    android:drawableLeft="@drawable/conf_detail_statrt"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_detail_start"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_listtype_bg"
+                    android:drawableLeft="@drawable/conf_detail_dianming"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_detail_dianming"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/vote_begin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_listtype_bg"
+                    android:drawableLeft="@drawable/conf_detail_startvote"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_detail_startVote"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/vote_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/conf_listtype_bg"
+                    android:drawableLeft="@drawable/conf_detail_voteresult"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/conf_detail_voteResult"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/conf_detail_end" />
+        </LinearLayout>
+    </ScrollView>
+	<include layout="@layout/bottommenu"/>
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_green" >
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:onClick="clickBackToFormer"
+            android:background="@drawable/back"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="@string/con_my_con_time_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_22" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_time_group_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:layout_margin="@dimen/margin_16"
+            android:background="@drawable/et_time_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editText_height"
+                android:drawableLeft="@drawable/conf_tv_btime"
+                android:gravity="center_vertical"
+                android:hint="@string/con_my_con_time_start"
+                android:paddingLeft="@dimen/margin_8"
+                android:textColor="@color/bg_blue"
+                android:textColorHint="@color/bg_blue"
+                android:textSize="@dimen/textsize_18" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_height"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:paddingLeft="@dimen/margin_8"
+                android:textColor="@color/bg_blue"
+                android:textColorHint="@color/bg_blue"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@drawable/et_time_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/editText_height"
+                android:drawableLeft="@drawable/conf_tv_etime"
+                android:gravity="center_vertical"
+                android:hint="@string/con_my_con_time_end"
+                android:paddingLeft="@dimen/margin_8"
+                android:textColor="@color/text_color_dark_gray"
+                android:textColorHint="@color/text_color_dark_gray"
+                android:textSize="@dimen/textsize_18" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_height"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:paddingLeft="@dimen/margin_8"
+                android:textColor="@color/text_color_dark_gray"
+                android:textColorHint="@color/text_color_dark_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_16"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_4"
+            android:text="@string/con_my_con_time_pre"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:checkedButton="@+id/rbtn_left"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1.0"
+                android:button="@drawable/selector_tel_msg" />
+
+            <RadioButton
+                android:id="@+id/rbtn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1.0"
+                android:button="@drawable/selector_void_msg" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:text="@string/con_my_con_time_delay"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_16"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginRight="@dimen/margin_8"
+            android:background="@drawable/tv_time_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_8"
+            android:text="@string/con_my_con_time_hour"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:background="@drawable/tv_time_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:text="@string/con_my_con_time_minute"
+            android:textColor="@color/bg_red"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ibtn_register_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:background="@drawable/submit"
+            android:contentDescription="@null" />
+
+        <include layout="@layout/bottommenu" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_attender_waitto"
+        android:layout_width="match_parent"
+       	android:layout_height="0dp"
+        android:background="@drawable/et_login_login_bg"
+        android:layout_weight="1.0"
+         >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+       	android:layout_height="0dip"
+       	android:layout_weight="0.01"
+        />
+        
+ 	
+	<LinearLayout 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"
+	    style="@android:style/ButtonBar"
+	    android:orientation="horizontal" 
+	    android:background="@color/white" >
+	    
+	    <Button
+	        android:layout_margin="@dimen/margin_8"	     
+	        android:layout_height="40dp"
+	        android:background="@drawable/bg_voteresult_top"
+	        android:onClick="clickPre"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/textsize_14"
+	        android:layout_marginBottom="30dp"
+	        android:text="上一步"
+	        android:contentDescription="@null" />
+	    <Button
+	        android:id="@+id/ibtn_select_all"
+	        android:layout_margin="@dimen/margin_8"
+	        android:layout_width="0dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/bg_vote_bg"
+	        android:layout_weight="1"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/textsize_14"
+	        android:layout_marginBottom="30dp"
+	        android:text="全 选"
+	        android:contentDescription="@null" />
+	    <Button
+	        android:id="@+id/ibtn_addto"
+	        android:layout_margin="@dimen/margin_8"
+	        android:layout_width="0dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/bg_voteresult_top"
+	        android:layout_weight="1"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/textsize_14"
+	        android:layout_marginBottom="30dp"
+	        android:text="添加到已选"
+	        android:contentDescription="@null" />
+    </LinearLayout>
+
+</LinearLayout>

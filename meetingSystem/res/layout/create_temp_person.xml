@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back"
+            android:onClick="clickBackToFormer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/temp_attender_title"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/conf_sendup_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_name"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <EditText
+                        android:id="@+id/et_temp_attender_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/conf_ettitle_bg"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:maxLength="12"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_org"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <EditText
+                        android:id="@+id/et_temp_attender_org"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/conf_ettitle_bg"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_post"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <EditText
+                        android:id="@+id/et_temp_attender_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/conf_ettitle_bg"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_phone"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <EditText
+                        android:id="@+id/et_temp_attender_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/conf_ettitle_bg"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_card_id"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <EditText
+                        android:id="@+id/et_temp_attender_card_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/conf_ettitle_bg"
+                        android:digits="0123456789X"
+                        android:gravity="top"
+                        android:maxLength="18"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp_attender_sex"
+                        android:textColor="@color/bg_red"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_sex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rg_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@android:drawable/btn_radio"
+                            android:text="@string/temp_attender_sex_male"
+                            android:textColor="@color/bg_green" />
+
+                        <RadioButton
+                            android:id="@+id/rg_rb2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:button="@null"
+                            android:drawableLeft="@android:drawable/btn_radio"
+                            android:text="@string/temp_attender_sex_female"
+                            android:textColor="@color/bg_green" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/topic_addthree_btn_pre_bg_color"
+                android:gravity="center_horizontal"
+                android:onClick="clickSubmit"
+                android:text="@string/temp_attender_submit"
+                android:textAlignment="center"
+                android:textColor="#EEEEEE" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

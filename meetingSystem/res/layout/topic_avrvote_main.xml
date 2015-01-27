@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_red" >
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/back"
+            android:contentDescription="@null"
+            android:onClick="clickBackToFormer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="@string/vote_avr_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_22" />
+    </FrameLayout>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_listview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/et_login_login_bg" >
+        </ListView>
+
+       
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1.0" >
+        </View>
+
+        <ImageButton
+            android:id="@+id/ibtn_dianming_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:background="@drawable/submit"
+            android:contentDescription="@null" 
+            android:onClick="clickVoipVoteSubmit"/>
+         </LinearLayout>
+               </LinearLayout>
+    </ScrollView>
+</LinearLayout>

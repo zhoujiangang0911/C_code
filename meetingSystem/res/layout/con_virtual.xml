@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red" >
+
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back"
+            android:onClick="clickBackToFormer" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/conf_virtual_title"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_message_listview"
+            android:layout_width="match_parent"
+            android:layout_height="359dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/et_login_login_bg" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/conf_virtu_sendbg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/topic_message"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/conf_virtu_inputbg"
+                android:hint="发言框"
+                android:paddingLeft="3dp"
+                android:textColor="@color/bg_red"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/conf_virtu_send"
+                android:onClick="clickSendMessage" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
