@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">百托帮</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+<!-- CommonServerActivity  首页 公众服务平台 -->
+    <string name="find_buiness">找生意</string>
+    <string name="copyright_buiness">百托帮@CopyRight 2014</string>
+    <string name="start_thing">发起事物</string>
+    <string name="my_buy">我要买</string>
+    <string name="setting">设置</string>
+    <!--  -->
+    <string name="tv_findbuiness_title">找生意</string>
+    
+    <!-- start login -->
+    <string name="login_save_password">记住密码</string>
+    <string name="login_networkset_str">网络设置</string>
+    
+    <!-- end login -->
+    
+    <!-- error -->
+    <string name="error_network">网络异常</string>
+    
+    <!-- voip -->
+    <string name="voip_unknown_user">未知联系人</string>
+    <string name="str_call_status" formatted="false">延迟时间%d（毫秒）丢包率:%d</string>
+    <string name="voip_calling_finish">通话结束</string>
+    <string name="voip_calling_wait">等待对方接听&#8230;</string>
+    <string name="voip_calling_timeout">无人应答,呼叫超时</string>
+    <string name="voip_call_fail">呼叫失败，请稍后重试&#8230;</string>
+    <string name="voip_calling_network_instability">对方不在线或者网络不给力,请直呼</string>
+    <string name="voip_call_back_success">回拨呼叫成功，请注意接听系统来电!</string>
+    <string name="voip_call_connect">正在呼叫对方，请稍后&#8230;</string>
+    <string name="voip_call_back_connect">正在呼叫，请稍后&#8230;</string>
+    <string name="voip_calling_refuse">对方拒接，请稍后再试</string>
+    <string name="voip_calling_busy">对方正忙，请稍后再拨</string>
+    <string name="voip_call_fail_no_cash">呼叫失败，请查询余额</string>
+    <string name="voip_is_talking_tip">云通讯正在通话中, 轻击以继续</string>
+    <string name="str_voip_not_support">该版本暂不不支持语音</string>
+    <string name="str_video_not_support">该版本暂不不支持视频</string>
+    <string name="str_other_voip_not_support">对方版本不支持音频聊天</string>
+  	
+    <string name="phone_type">0123456789</string>
+    <string name="password_type">0123456789abcdefghijklmiopqrstuvwxyzABCDEFGHIJKLMIOPQRSTUVWXYZ</string>
+</resources>

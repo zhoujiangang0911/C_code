@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:background="@drawable/imgview_leftarrow" 
+                android:onClick="clickBackToFormer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="合并事务"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+            
+        </RelativeLayout>
+                
+        <ListView
+            android:id="@+id/servant_merge_listview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8">
+        </ListView> 
+        
+	    <Button
+	        android:id="@+id/merge"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/margin_80px"        
+	        android:layout_margin="@dimen/margin_20px"
+	        android:text="合  并"
+	        android:textColor="#fff"
+	        android:background="@drawable/bg_title" />
+	    
+
+         
+    </LinearLayout>
+
+</LinearLayout>

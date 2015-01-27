@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title" >
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20px"
+            android:background="@drawable/imgview_leftarrow" 
+            android:onClick="clickBackToFormer"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公众服务平台"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18" />
+
+        <ImageButton
+            android:id="@+id/userCenterImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/server_personal_info" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/user_goverment_radioGroup"
+        android:layout_marginTop="@dimen/margin_20px"
+        android:layout_marginLeft="@dimen/margin_20px"
+        android:layout_marginRight="@dimen/margin_20px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_80px"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/user_goverment_radioBt1"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="待归档"
+            android:gravity="center"
+            android:background="#aaa"
+            android:textColor="@color/color_radiobutton"
+            />
+
+        <RadioButton
+            android:id="@+id/user_goverment_radioBt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="已归档"
+              android:textStyle="bold"
+            android:gravity="center"
+            android:background="#aaa"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:button="@null"
+            android:textColor="@color/color_radiobutton" />
+
+    </RadioGroup>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_goverment_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+ 
+</LinearLayout>

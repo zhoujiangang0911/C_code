@@ -1,0 +1,280 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_title" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:background="@drawable/imgview_leftarrow"
+                android:onClick="clickBackToFormer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10px"
+            android:background="@drawable/bg_inputrouner"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="姓名"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_180px"
+                    android:text="张三" />
+                
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"     
+                    android:layout_marginRight="@dimen/margin_4"               
+                    android:drawableLeft="@drawable/imgview_linever"
+                    android:drawablePadding="@dimen/margin_10"                  
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="取消常用联系人"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10px"
+            android:background="@drawable/bg_middle"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="职务"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_180px"
+                    android:text="村支书" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/imgview_linehor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="手机"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_180px"
+                    android:text="18235645556" />
+                
+                <TextView
+                    android:id="@+id/callphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"     
+                    android:layout_marginRight="@dimen/margin_20"               
+                    android:drawableLeft="@drawable/imgview_linever"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:drawableRight="@drawable/imgview_datil"                    
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/imgview_linehor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:text="固话"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:id="@+id/fixphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_180px"
+                    android:text="029-88524512" />
+
+                <TextView
+                    android:id="@+id/callfixphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"     
+                    android:layout_marginRight="@dimen/margin_20"               
+                    android:drawableLeft="@drawable/imgview_linever"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:drawableRight="@drawable/imgview_datil"                    
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/imgview_linehor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="网络电话"
+                    android:textSize="@dimen/textsize_18" />
+
+                <TextView
+                    android:id="@+id/voip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_180px"
+                    android:text="80000000023546" />
+                
+                <TextView
+                    android:id="@+id/callvoip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"     
+                    android:layout_marginRight="@dimen/margin_20"               
+                    android:drawableLeft="@drawable/imgview_linever"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:drawableRight="@drawable/imgview_datil"                    
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/imgview_linehor" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
